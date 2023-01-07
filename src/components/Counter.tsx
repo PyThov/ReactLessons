@@ -9,7 +9,7 @@ export default function Counter(){
     
     return (
       <div className="homePage">
-      <div style={{padding: "10px"}}>
+      <div style={{padding: "10px", color: "#444"}}>
         Count: {count}
       </div>
       <button className="incrementButton" onClick={handleIncrement}>
