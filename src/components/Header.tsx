@@ -6,7 +6,6 @@ export default function Header(){
             display: "flex",
             alignItems: "center",
             backgroundColor: "#444",
-            width: "100vw",
             padding: "20px",            
         }}>
             <div className="headerText">
