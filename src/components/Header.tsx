@@ -1,4 +1,4 @@
-import { Button } from "@mui/material"
+import { Button, Box, Typography } from "@mui/material"
 import "./components.css"
 
 export default function Header(){
@@ -11,10 +11,18 @@ export default function Header(){
             padding: "20px",
             marginBottom: "10px"     
         }}>
-            <div className="headerText" style={{color: "white"}}>
-                ZPM - React Lessons
-            </div>
-            <div>
+            <Button variant="outlined" sx={{borderColor: "white"}} href="/">
+                <Typography variant="body1" color="white">ZPM - React Lessons</Typography>
+            </Button>
+            <Box display="flex" gap="20px">
+                <Button href="/worker" variant="contained" sx={{
+                    backgroundColor: "white",
+                    color: "black",
+                    ":hover": {
+                        color: "white"
+                    }}}>
+                        Web Worker
+                </Button>
                 <Button href="/pokesearcher" variant="contained" sx={{
                     backgroundColor: "white",
                     color: "black",
@@ -23,8 +31,8 @@ export default function Header(){
                         color: "white"
                     }}}>
                         PokeSearcher
-                    </Button>
-            </div>
+                </Button>
+            </Box>
         </div>
     )
 }
