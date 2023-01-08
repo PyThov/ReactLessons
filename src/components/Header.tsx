@@ -15,6 +15,14 @@ export default function Header(){
                 <Typography variant="body1" color="white">ZPM - React Lessons</Typography>
             </Button>
             <Box display="flex" gap="20px">
+                <Button href="/api-1" variant="contained" sx={{
+                    backgroundColor: "white",
+                    color: "black",
+                    ":hover": {
+                        color: "white"
+                    }}}>
+                        Custom API
+                </Button>
                 <Button href="/worker" variant="contained" sx={{
                     backgroundColor: "white",
                     color: "black",

@@ -8,7 +8,7 @@ export default function Home() {
             alignItems: "center",
             gap: "20px"
             }}>
-            <Typography variant="h2">Home</Typography>
+            <Typography variant="h2" sx={{borderBottom: "2px solid #444"}}>Home</Typography>
         </Container>
     )
 }
